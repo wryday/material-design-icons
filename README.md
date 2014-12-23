@@ -1,5 +1,22 @@
 # Material Design Icons
 
+Material Design Icons packaged as an Android library.
+
+_**IMPORTANT**_
+
+When using this library use `minifyEnabled` and `shrinkResources`.
+
+```groovy
+android {
+	buildTypes {
+		release {
+			minifyEnabled true
+			shrinkResources true
+		}
+	}
+}﻿
+```
+
 Material Design Icons are the official open-source [icons](http://www.google.com/design/spec/resources/sticker-sheets.html#sticker-sheets-components) featured in the Google [Material Design](http://www.google.com/design/spec) specification.
 
 ## What's included?
