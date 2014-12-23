@@ -33,6 +33,19 @@ A live [preview](http://google.github.io/material-design-icons/)  of the icon se
 
 You have a few options for getting the icons.
 
+### Maven
+```xml
+<dependency>
+  <groupId>com.michaelpardo</groupId>
+  <artifactId>materialdesignicons</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+### Gradle
+```groovy
+compile 'com.michaelpardo:materialdesignicons:1.0.0'
+```
+
 ### Download the Zip
 
 Grab the latest stable [zip archive](https://github.com/google/material-design-icons/releases/download/1.0.1/material-design-icons-1.0.1.zip) (~57MB) of all icons or the bleeding-edge version from [master](https://github.com/google/material-design-icons/archive/master.zip).
