@@ -6,7 +6,7 @@ Material Design Icons are the official open-source [icons](http://www.google.com
 
 _**IMPORTANT**_
 
-When using this library use `minifyEnabled` and `shrinkResources`.
+When using this library use `minifyEnabled` and `shrinkResources` to prevent adding the entire ~36MB of resources in this library to your APK.
 
 ```groovy
 android {
@@ -18,6 +18,8 @@ android {
 	}
 }﻿
 ```
+
+Additionally, including the entire icon set can burden your build system and IDE. It's preferred to use the depenencies for inidividual icon categories rather than the entire icon set.
 
 ## What's included?
 
