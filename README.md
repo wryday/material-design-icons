@@ -2,6 +2,8 @@
 
 Material Design Icons packaged as an Android library.
 
+Material Design Icons are the official open-source [icons](http://www.google.com/design/spec/resources/sticker-sheets.html#sticker-sheets-components) featured in the Google [Material Design](http://www.google.com/design/spec) specification.
+
 _**IMPORTANT**_
 
 When using this library use `minifyEnabled` and `shrinkResources`.
@@ -16,8 +18,6 @@ android {
 	}
 }﻿
 ```
-
-Material Design Icons are the official open-source [icons](http://www.google.com/design/spec/resources/sticker-sheets.html#sticker-sheets-components) featured in the Google [Material Design](http://www.google.com/design/spec) specification.
 
 ## What's included?
 
@@ -37,13 +37,19 @@ You have a few options for getting the icons.
 ```xml
 <dependency>
   <groupId>com.michaelpardo</groupId>
-  <artifactId>materialdesignicons</artifactId>
+  <artifactId>materialdesignicons(-[category])</artifactId>
   <version>1.0.0</version>
 </dependency>
 ```
 ### Gradle
 ```groovy
+// All categories
 compile 'com.michaelpardo:materialdesignicons:1.0.0'
+// Individual categories
+compile 'com.michaelpardo:materialdesignicons-action:1.0.0'
+compile 'com.michaelpardo:materialdesignicons-alert:1.0.0'
+compile 'com.michaelpardo:materialdesignicons-av:1.0.0'
+...
 ```
 
 ### Download the Zip
