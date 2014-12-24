@@ -1,5 +1,5 @@
 ### Copied assets ###
-library/src/main/res
+**/library/src/main/res
 
 ### Gradle ###
 .gradle

@@ -1,0 +1,27 @@
+apply plugin: 'android-library'
+apply from: '../../gradle-mvn-push.gradle'
+
+group = GROUP
+version = VERSION_NAME
+
+android {
+	compileSdkVersion 21
+	buildToolsVersion "21.1.2"
+}
+
+task copyAssets(type: Copy) {
+	from '../'
+	into 'src/main/res'
+	include '**/drawable*/*.png'
+	exclude 'library'
+	includeEmptyDirs = false
+	eachFile { file ->
+		file.path = file.path.find(/(drawable-.*)/)
+	}
+}
+
+clean {
+	delete 'src/main/res'
+}
+
+preBuild.dependsOn copyAssets
